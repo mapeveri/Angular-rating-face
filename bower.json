@@ -1,0 +1,24 @@
+{
+  "name": "Angular-rating-face",
+  "authors": [
+    "Martin Peveri <martinpeveri@gmail.com>"
+  ],
+  "description": "This directive angular.js contains one container for rating with faces.",
+  "main": "dist",
+  "moduleType": [],
+  "keywords": [
+    "AngularJs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mapeveri/Angular-rating-face",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+    "index.html",
+    "controller.main.js",
+    "images"
+  ]
+}
