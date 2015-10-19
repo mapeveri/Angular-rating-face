@@ -3,17 +3,24 @@ Angular Rating Face
 
 This directive angular.js contains one container for rating with faces.
 
+Install
+-------
+
+Via bower::
+
+    bower install Angular-rating-face
+
 Getting started
 ---------------
 
 1. Add script js::
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="AngularRatingFace/dist/js/angular-rating-face.js"></script>
+    <script src="bower_components/Angular-rating-face/dist/js/angular-rating-face.js"></script>
 
 2. Add file css::
 
-    <link rel="stylesheet" type="text/css" href="AngularRatingFace/dist/css/style.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/Angular-rating-face/dist/css/style.css">
 
 3. Add the module **rating-face** to module main::
 
@@ -39,4 +46,4 @@ Check the file `index`_.
 
 .. image:: https://github.com/mapeveri/Angular-rating-face/blob/master/images/example.png
 
-.. _index: https://github.com/mapeveri/Angular-rating-face/blob/master/index.html
+.. _index: https://github.com/mapeveri/Angular-rating-face/blob/master/example/index.html
