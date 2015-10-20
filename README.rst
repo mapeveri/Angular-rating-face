@@ -16,7 +16,7 @@ Getting started
 1. Add script js::
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="bower_components/Angular-rating-face/dist/js/angular-rating-face.js"></script>
+    <script src="bower_components/Angular-rating-face/dist/js/angular-rating-face.min.js"></script>
 
 2. Add file css::
 

@@ -1,7 +1,7 @@
 "use strict";
 var App = angular.module("rating-face", []);
 
-App.directive("ratingFace", function($parse){
+App.directive("ratingFace", ["$parse", function($parse){
   //Get path img
   var script = angular.element(document.querySelector("script[src$='angular-rating-face.js']")).attr("src");
   var pathImg = script.substring(0, script.lastIndexOf('/') + 1);
@@ -76,4 +76,4 @@ App.directive("ratingFace", function($parse){
        });
     }
   };
-});
+}]);
