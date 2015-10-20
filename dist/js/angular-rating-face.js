@@ -29,7 +29,7 @@ App.directive("ratingFace", function($parse){
            scope.$apply();
            for(var i=1; i<=5; i++){
              var el = angular.element(document.querySelector("#face"+i));
-             if(i<=id){
+             if(i==id){
                el.removeClass("opacity-face");
                el.attr("clicked", true);
              }else{
@@ -48,7 +48,7 @@ App.directive("ratingFace", function($parse){
          } finally {
            for(var i=1; i<=5; i++){
              var el = angular.element(document.querySelector("#face"+i));
-             if(i<=id){
+             if(i==id){
                el.removeClass("opacity-face");
              }else{
                el.addClass("opacity-face");
@@ -66,7 +66,7 @@ App.directive("ratingFace", function($parse){
          } finally {
            for(var i=1; i<=5; i++){
              var el = angular.element(document.querySelector("#face"+i));
-             if(i<=id){
+             if(i==id){
                el.removeClass("opacity-face");
              }else{
                el.addClass("opacity-face");
