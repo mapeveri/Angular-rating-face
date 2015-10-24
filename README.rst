@@ -28,7 +28,7 @@ Getting started
 
 4. Add to html this line::
 
-    <rating-face model="rating_value"></rating-face>
+    <rating-face ng-model="rating_value"></rating-face>
 
 5. Get the selected value. In your controller you can access in this way::
 
