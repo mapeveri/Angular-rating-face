@@ -1,23 +1,26 @@
+//Version 0.0.5
 (function(){
   "use strict";
   var App = angular.module("rating-face", []);
 
   App.directive("ratingFace", ["$parse", function($parse){
-    //Get path img
-    var script = angular.element(document.querySelector("script[src$='angular-rating-face.js']")).attr("src");
-    var pathImg = script.substring(0, script.lastIndexOf('/') + 1);
-    pathImg = pathImg.substring(0, pathImg.length -3);
-
-    //Template with the images
-    var dataTemplate = '<div class="angular-rating-face">';
-    for(var i=1; i<=5;i++){
-      dataTemplate += '<img ng-src="'+pathImg+'img/face_'+i+'.png" class="opacity-face" id="face'+i+'" val="'+i+'" />'
-    }
-    dataTemplate += '</div>';
-
     return {
       restrict: 'E',
-      template: dataTemplate,
+      template: function(elem,attrs) {
+        //Get path img
+        if(angular.isDefined(attrs.path)){
+          var pathImg = attrs.path;
+        }else{
+          var pathImg = "bower_components/Angular-rating-face/dist/";
+        }
+        //Template with the images
+        var dataTemplate = '<div class="angular-rating-face">';
+        for(var i=1; i<=5;i++){
+          dataTemplate += '<img ng-src="'+pathImg+'img/face_'+i+'.png" class="opacity-face" id="face'+i+'" val="'+i+'" />'
+        }
+        dataTemplate += '</div>';
+        return dataTemplate;
+      },
       require: 'ngModel',
       controller: ["$scope", function($scope){
         $scope.remove_class_face = function(id){

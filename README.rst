@@ -28,7 +28,7 @@ Getting started
 
 4. Add to html this line::
 
-    <rating-face ng-model="rating_value"></rating-face>
+    <rating-face ng-model="rating_value" path="path_to_image"></rating-face>
 
 5. Get the selected value. In your controller you can access in this way::
 
@@ -37,7 +37,10 @@ Getting started
 Attribute
 ---------
 
-Model: This attribute is the model (the your controller) that contains the value clicked.
+1. Model: This attribute is the model (the your controller) that contains the value clicked.
+
+2. Path: This attribute is for indicate the path to folder 'Angular-rating-face/dist'. This attribute not is required.
+		Value default: 'bower_components/Angular-rating-face/dist/'
 
 Example
 -------
