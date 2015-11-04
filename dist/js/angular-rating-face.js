@@ -1,4 +1,4 @@
-//Version 0.0.5
+//Version 0.0.6
 (function(){
   "use strict";
   var App = angular.module("rating-face", []);
@@ -75,6 +75,11 @@
              scope.remove_class_face(id);
            }
          });
+
+         //Whatcher for hoover
+         scope.$watch(attr['ngModel'], function (v) {
+              scope.remove_class_face(v);
+          });
       }
     };
   }]);

@@ -1,6 +1,6 @@
 {
   "name": "Angular-rating-face",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This directive angular.js contains one container for rating with faces.",
   "main": "angular-rating-face.js",
   "directories": {
