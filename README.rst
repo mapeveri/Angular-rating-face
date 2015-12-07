@@ -34,6 +34,9 @@ Getting started
 
       alert($scope.rating_value);
 
+
+NOTE: The path of project when installed must be in bower_components.
+
 Attribute
 ---------
 
