@@ -1,7 +1,7 @@
 Angular Rating Face
 ===================
 
-This directive angular.js contains one container for rating with faces.
+*DEPRECATED*
 
 Install
 -------
